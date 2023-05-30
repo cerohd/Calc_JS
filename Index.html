@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="display"  readonly />
+        </div>
+        <div class="keys">
+            <div class="row">
+                <button class="btn clear" onclick="clearResult()">C</button>
+                <button class="btn clear" onclick="backSpace()">&#9003;</button>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumabe('7')">7</button>
+            <button class="btn" onclick="appendNumabe('8')">8</button>
+            <button class="btn" onclick="appendNumabe('9')">9</button>
+            <button class="btn operator" onclick="appendOperations ('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumabe('4')">4</button>
+            <button class="btn" onclick="appendNumabe('5')">5</button>
+            <button class="btn" onclick="appendNumabe('6')">6</button>
+            <button class="btn operator" onclick="appendOperations ('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumabe('1')">1</button>
+            <button class="btn" onclick="appendNumabe('2')">2</button>
+            <button class="btn" onclick="appendNumabe('3')">3</button>
+            <button class="btn operator" onclick="appendOperations ('*')">*</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumabe('0')">0</button>
+            <button class="btn" onclick="appendNumabe('.')">.</button>
+            <button class="btn equal" onclick="calculator('')">=</button>
+            <button class="btn operator" onclick="appendOperations ('/')">/</button>
+        </div>
+    </div>
+    <script src="Calc.js"></script>
+
+
+</body>
+
+
+</html>
